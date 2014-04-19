@@ -1,0 +1,175 @@
+﻿/*global Backbone, jQuery, _, ENTER_KEY, Appacitive */
+
+var app = WinJS.Application;
+
+(function ($) {
+    'use strict';
+
+    var ENTER_KEY = 13;
+    var ESC_KEY = 27;
+
+    // The Application
+    // ---------------
+
+    // Our overall **TodosView** is the top-level piece of UI.
+    app.TodosView = Backbone.View.extend({
+
+        // Instead of generating a new element, bind to the existing skeleton of
+        // the App already present in the HTML.
+        el: '.main',
+
+        // Main todos template
+        todosTemplate: $("#todos-template").html(),
+
+        // Our template for the line of statistics at the bottom of the app.
+        statsTemplate: _.template($('#stats-template').html()),
+
+        // Delegated events for creating new items, and clearing completed ones.
+        events: {
+            'keypress #header #new-todo': 'createOnEnter',
+            'click #toggle-all': 'toggleAllComplete',
+            'click #clear-completed': 'clearCompleted',
+            'click .log-out': 'logOut'
+        },
+
+        // At initialization we bind to the relevant events on the `Todos`
+        // collection, when items are added or changed. Kick things off by
+        // loading any preexisting todos for logged-in user from Appacitive
+        initialize: function () {
+            this.$el.html(_.template(this.todosTemplate));
+
+            $('#help-info').show();
+
+            app.todos.query().fields(["title", "completed", "order"]);
+
+            this.allCheckbox = this.$('#toggle-all')[0];
+            this.$input = this.$('#new-todo');
+            this.$footer = this.$('#footer');
+            this.$main = this.$('#main');
+            this.$list = $('#todo-list');
+
+            this.listenTo(app.todos, 'add', this.addOne);
+            this.listenTo(app.todos, 'reset', this.addAll);
+            this.listenTo(app.todos, 'change:completed', this.filterOne);
+            this.listenTo(app.todos, 'filter', this.filterAll);
+            this.listenTo(app.todos, 'all', this.render);
+
+            var self = this;
+
+            // Set query type for app.todos
+            // Query will be getConnectedObjects in respect to current user for relation owner
+            // This'll allow us to fetch todo objects connected to user by owner relation
+            var query = Appacitive.Users.current().getConnectedObjects({
+                relation: 'owner',
+                pageSize: 200
+            });
+
+            app.todos.query(query);
+
+            // Suppresses 'add' events with {reset: true} and prevents the app view
+            // from being re-rendered for every model. Only renders when the 'reset'
+            // event is triggered at the end of the fetch.
+            app.todos.fetch({ reset: true, sort: true }).then(function () {
+                self.$input.removeAttr('disabled');
+            });
+        },
+
+        // Re-rendering the App just means refreshing the statistics -- the rest
+        // of the app doesn't change.
+        render: function () {
+
+            var completed = app.todos.completed().length;
+            var remaining = app.todos.remaining().length;
+
+            if (app.todos.length) {
+                this.$main.show();
+                this.$footer.show();
+
+                this.$footer.html(this.statsTemplate({
+                    completed: completed,
+                    remaining: remaining
+                }));
+
+                this.$('#filters li a')
+					.removeClass('selected')
+					.filter('[href="#/' + (app.TodoFilter || '') + '"]')
+					.addClass('selected');
+            } else {
+                //this.$main.hide();
+                this.$footer.hide();
+            }
+
+            this.allCheckbox.checked = !remaining;
+            if (remaining) this.allCheckbox.title = "Mark all as complete";
+            else this.allCheckbox.title = "Mark all as incomplete";
+        },
+
+        // Logs out the user from Appacitvie and shows the login view
+        logOut: function (e) {
+            Appacitive.Users.logout(true);
+            new app.LogInView();
+            this.undelegateEvents();
+            delete this;
+        },
+
+        // Add a single todo item to the list by creating a view for it, and
+        // appending its element to the `<ul>`.
+        addOne: function (todo) {
+            var view = new app.TodoView({ model: todo });
+            this.$list.append(view.render().el);
+        },
+
+        // Add all items in the **Todos** collection at once.
+        addAll: function () {
+            this.$list.html('');
+            app.todos.each(this.addOne, this);
+            return false;
+        },
+
+        filterOne: function (todo) {
+            todo.trigger('visible');
+        },
+
+        filterAll: function () {
+            app.todos.each(this.filterOne, this);
+            return false;
+        },
+
+        // Generate the attributes for a new Todo item to save on Appacitive.
+        newAttributes: function () {
+            return {
+                title: this.$input.val().trim(),
+                order: app.todos.nextOrder(),
+                completed: false
+            };
+        },
+
+        // If you hit return in the main input field, create new **Todo** model and connecting it to loggedin user using owner relation,
+        // and persist it on Appacitive server
+        createOnEnter: function (e) {
+            if (e.which === ENTER_KEY && this.$input.val().trim().length > 0) {
+                app.todos.connectAndCreate(this.newAttributes());
+                this.$input.val('');
+                return false;
+            }
+        },
+
+        // Clear all completed todo items, destroying their models.
+        clearCompleted: function () {
+            _.invoke(app.todos.completed(), 'destroyWithConnections');
+            return false;
+        },
+
+        // Mark all items either completed or not and persist them on Appacitive
+        toggleAllComplete: function () {
+            var completed = this.allCheckbox.checked;
+
+            app.todos.each(function (todo) {
+                todo.set('completed', completed)
+					.save();
+            });
+
+            return false;
+        }
+    });
+})(jQuery);

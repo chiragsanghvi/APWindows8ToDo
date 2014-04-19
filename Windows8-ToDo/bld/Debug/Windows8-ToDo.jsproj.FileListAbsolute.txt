@@ -1,0 +1,13 @@
+C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\bin\Debug\resources.pri
+C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\bin\Debug\AppxManifest.xml
+C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\bin\Debug\Windows8-ToDo.build.appxrecipe
+C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\bld\Debug\priconfig.xml.intermediate
+C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\bld\Debug\layout.resfiles.intermediate
+C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\bld\Debug\resources.resfiles.intermediate
+C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\bld\Debug\pri.resfiles.intermediate
+C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\bld\Debug\priconfig.xml
+C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\bld\Debug\layout.resfiles
+C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\bld\Debug\resources.resfiles
+C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\bld\Debug\pri.resfiles
+C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\bld\Debug\LanguageQualifiers.txt
+C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\bld\Debug\ProjectArchitectures.txt
