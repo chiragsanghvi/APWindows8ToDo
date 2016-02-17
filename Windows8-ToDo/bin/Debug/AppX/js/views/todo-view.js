@@ -110,7 +110,7 @@ var app = WinJS.Application;
 
         // Remove the item, destroy the model from Appacitive and delete its view.
         clear: function () {
-            this.model.destroyWithConnections();
+            this.model.destroy(true);
         }
     });
 })(jQuery);

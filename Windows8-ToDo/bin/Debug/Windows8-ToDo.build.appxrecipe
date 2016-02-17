@@ -1,95 +1,95 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>GREMLIN</Machine>
-    <WindowsUser>chirag</WindowsUser>
+    <Machine>DESKTOP-NLMRSIA</Machine>
+    <WindowsUser>Chirag</WindowsUser>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\css\images\bg.png">
+    <AppxPackagedFile Include="C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\css\images\bg.png">
       <PackagePath>css\images\bg.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\images\logo.png">
+    <AppxPackagedFile Include="C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\images\logo.png">
       <PackagePath>images\logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\images\smalllogo.png">
+    <AppxPackagedFile Include="C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\images\smalllogo.png">
       <PackagePath>images\smalllogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\images\splashscreen.png">
+    <AppxPackagedFile Include="C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\images\splashscreen.png">
       <PackagePath>images\splashscreen.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\images\storelogo.png">
+    <AppxPackagedFile Include="C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\images\storelogo.png">
       <PackagePath>images\storelogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\css\images\loader.gif">
+    <AppxPackagedFile Include="C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\css\images\loader.gif">
       <PackagePath>css\images\loader.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\css\todos.css">
+    <AppxPackagedFile Include="C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\css\todos.css">
       <PackagePath>css\todos.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\css\default.css">
+    <AppxPackagedFile Include="C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\css\default.css">
       <PackagePath>css\default.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\default.html">
+    <AppxPackagedFile Include="C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\default.html">
       <PackagePath>default.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\js\collections\todos.js">
+    <AppxPackagedFile Include="C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\js\collections\todos.js">
       <PackagePath>js\collections\todos.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\js\default.js">
+    <AppxPackagedFile Include="C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\js\default.js">
       <PackagePath>js\default.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\js\infra\AppacitiveSDK.js">
+    <AppxPackagedFile Include="C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\js\infra\AppacitiveSDK.js">
       <PackagePath>js\infra\AppacitiveSDK.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\js\infra\backbone.js">
+    <AppxPackagedFile Include="C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\js\infra\backbone.js">
       <PackagePath>js\infra\backbone.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\js\infra\jquery-2.0.0.js">
+    <AppxPackagedFile Include="C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\js\infra\jquery-2.0.0.js">
       <PackagePath>js\infra\jquery-2.0.0.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\js\infra\underscore.js">
+    <AppxPackagedFile Include="C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\js\infra\underscore.js">
       <PackagePath>js\infra\underscore.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\js\models\todo.js">
+    <AppxPackagedFile Include="C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\js\models\todo.js">
       <PackagePath>js\models\todo.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\js\routers\router.js">
+    <AppxPackagedFile Include="C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\js\routers\router.js">
       <PackagePath>js\routers\router.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\js\views\app-view.js">
+    <AppxPackagedFile Include="C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\js\views\app-view.js">
       <PackagePath>js\views\app-view.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\js\views\login-view.js">
+    <AppxPackagedFile Include="C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\js\views\login-view.js">
       <PackagePath>js\views\login-view.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\js\views\todo-view.js">
+    <AppxPackagedFile Include="C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\js\views\todo-view.js">
       <PackagePath>js\views\todo-view.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\js\views\todos-view.js">
+    <AppxPackagedFile Include="C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\js\views\todos-view.js">
       <PackagePath>js\views\todos-view.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\">
       <Name>Microsoft.WinJS.1.0</Name>
-      <Version>1.0.9200.20602</Version>
+      <Version>1.0.9200.20789</Version>
       <Architecture>Neutral</Architecture>
-      <FrameworkIdentity>Name=Microsoft.WinJS.1.0, MinVersion=1.0.9200.20602</FrameworkIdentity>
+      <FrameworkIdentity>Name=Microsoft.WinJS.1.0, MinVersion=1.0.9200.20789</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\Microsoft.WinJS.1.0.appx</AppxLocation>
     </ResolvedSDKReference>
   </ItemGroup>

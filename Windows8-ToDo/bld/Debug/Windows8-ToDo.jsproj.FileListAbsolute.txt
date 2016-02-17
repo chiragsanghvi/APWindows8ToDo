@@ -11,3 +11,12 @@ C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\bld\Debug\resources.resfiles
 C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\bld\Debug\pri.resfiles
 C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\bld\Debug\LanguageQualifiers.txt
 C:\Users\chirag\Windows8-ToDo\Windows8-ToDo\bld\Debug\ProjectArchitectures.txt
+C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\bin\Debug\resources.pri
+C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\bin\Debug\AppxManifest.xml
+C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\bin\Debug\Windows8-ToDo.build.appxrecipe
+C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\bld\Debug\priconfig.xml
+C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\bld\Debug\layout.resfiles
+C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\bld\Debug\resources.resfiles
+C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\bld\Debug\pri.resfiles
+C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\bld\Debug\LanguageQualifiers.txt
+C:\Users\Chirag\Documents\Development\APWindows8ToDo\Windows8-ToDo\bld\Debug\ProjectArchitectures.txt
